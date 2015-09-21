@@ -1,0 +1,5 @@
+x<-rbeta(5000,5,2)
+par(mfrow=c(1,2))
+hist(x,col="gray",xlab="Our Randomly Sampled Values", ylab="Frequency of Ocurrence", main="Frequency")
+hist(x,freq=FALSE, col="gray",xlab="Our Randomly Sampled Values", ylab="Density", main="Density")
+lines(density(x),lty="dotted", lwd=3)
